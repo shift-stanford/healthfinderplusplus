@@ -9,7 +9,7 @@
 import UIKit
 import AFNetworking
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var topics: [NSDictionary]?
     
@@ -52,8 +52,22 @@ class ViewController: UIViewController, UITableViewDataSource {
         let topic = topics![indexPath.row]
         let url = URL(string: topic["ImageUrl"] as! String)
         cell.topicImage.setImageWith(url!)
-        cell.topicTitle.text = (topic["Title"] as! String).removingPercentEncoding
+        cell.topicTitle.text = topic["Title"] as? String
+        cell.topicLastUpdated.text = topic["LastUpdate"] as? String
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "section_segue", sender: tableView.cellForRow(at: indexPath))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "section_segue") {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)
+            let destinationVC = segue.destination as! HealthFinderDetailViewController
+            destinationVC.sections = topics![indexPath!.row]["Sections"] as? [NSDictionary]
+        }
     }
 }
 
