@@ -34,7 +34,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         self.topics = results["Topics"] as? [NSDictionary]
                         self.tableView.reloadData()
                     }
+                } else {
+                    // JSON serialization failed...
                 }
+            } else {
+                let alert = UIAlertView()
+                alert.title = "No network connection"
+                alert.message = "Make sure you have a working internet connection!"
+                alert.addButton(withTitle: "OK")
+                alert.show()
             }
         }
         task.resume()
