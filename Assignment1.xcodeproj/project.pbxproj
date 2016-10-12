@@ -12,6 +12,7 @@
 		0020DE3F1D93383300BA990C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0020DE3D1D93383300BA990C /* Main.storyboard */; };
 		0020DE411D93383300BA990C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0020DE401D93383300BA990C /* Assets.xcassets */; };
 		0020DE441D93383300BA990C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0020DE421D93383300BA990C /* LaunchScreen.storyboard */; };
+		0078974D1DAE266500E03907 /* HealthFinderFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0078974C1DAE266500E03907 /* HealthFinderFiltersViewController.swift */; };
 		00B51F5F1D93A5A10007E678 /* HealthFinderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B51F5E1D93A5A10007E678 /* HealthFinderDetailViewController.swift */; };
 		00C3CCD81D93843300A6428E /* HealthFinderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3CCD71D93843300A6428E /* HealthFinderTableViewCell.swift */; };
 		218F38AA804C09E66B993FD6 /* Pods_Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A54763CAAB65C1F0E1E1A5 /* Pods_Assignment1.framework */; };
@@ -25,6 +26,7 @@
 		0020DE401D93383300BA990C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0020DE431D93383300BA990C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0020DE451D93383300BA990C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0078974C1DAE266500E03907 /* HealthFinderFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthFinderFiltersViewController.swift; sourceTree = "<group>"; };
 		00B51F5E1D93A5A10007E678 /* HealthFinderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthFinderDetailViewController.swift; sourceTree = "<group>"; };
 		00C3CCD71D93843300A6428E /* HealthFinderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthFinderTableViewCell.swift; sourceTree = "<group>"; };
 		02A54763CAAB65C1F0E1E1A5 /* Pods_Assignment1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				0020DE3D1D93383300BA990C /* Main.storyboard */,
 				00C3CCD71D93843300A6428E /* HealthFinderTableViewCell.swift */,
 				00B51F5E1D93A5A10007E678 /* HealthFinderDetailViewController.swift */,
+				0078974C1DAE266500E03907 /* HealthFinderFiltersViewController.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				00C3CCD81D93843300A6428E /* HealthFinderTableViewCell.swift in Sources */,
 				00B51F5F1D93A5A10007E678 /* HealthFinderDetailViewController.swift in Sources */,
 				0020DE3C1D93383300BA990C /* ViewController.swift in Sources */,
+				0078974D1DAE266500E03907 /* HealthFinderFiltersViewController.swift in Sources */,
 				0020DE3A1D93383300BA990C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

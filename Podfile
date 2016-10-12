@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'Assignment1' do
     pod 'AFNetworking'
+    pod 'MBProgressHUD'
 end
 

@@ -1,4 +1,4 @@
-# Assignment 1 - *HealthFinder.gov Mobile Client*
+# Assignment 2 - *HealthFinder++*
 
 **HealthFinder** is a mobile client app that leverages the [HealthFinder API](https://healthfinder.gov/Developer/How_to_Use.aspx#) which is maintained by the Department of Health and Human Services.
 
@@ -8,30 +8,22 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] User can view a list of health topics returned by an API. 
-- [x] Poster images load asynchronously using `AFNetworking`
-- [x] User can view a health topic’s details by tapping on a cell.
-- [ ] User sees loading state while waiting for the API.
-- [ ] User sees an error message when there is a network error. You can simulate an error by turning off your Simulator’s Wi-Fi (Press CMD+Shift+H to hit the Home button to go to settings)
+- [ ] User can search for HealthFinder topics using a UISearchBar
+- [ ] User can show and hide filter controls using a UISwitch
+- [ ] User can use a UIPickerView to select an age
+- [ ] Delegates/Protocols are used to update the searching functionality
 
 The following **optional** features are implemented:
-- [ ] User can pull to refresh the movie list [see tutorial](https://guides.codepath.com/ios/Table-View-Guide#adding-pull-to-refresh)
-- [ ] Implement a “settings” page where a user can set their age and then pull to refresh the list of topics
-- [ ] Use UILabel’s `attributedText` property to properly display the HTML encoded text [SO Post](http://stackoverflow.com/questions/25879837/how-to-display-html-formatted-text-in-ios-label) 
-- [ ] Add a search bar that sends a different keyword to the API: `https://healthfinder.gov/developer/Search.xml?api_key=demo_api_key&keyword=*`
-- [ ] All images fade in.
-- [ ] Customize the highlight and selection effect of the cell.
-- [ ] Customize the navigation bar.
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] Disable and clear the searchBar appropriately
+- [ ] User can persist the filter options using `UserDefaults.standard`
+- [ ] Improve the searching to be more robust by clearing results when you turn filters off
+- [ ] Throttle the search function!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='base-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='your-local-link-to-gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [GIPHY Capture](https://itunes.apple.com/us/app/gifgrabber/id668208984?mt=12).
 
